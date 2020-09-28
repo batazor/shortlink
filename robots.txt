@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://batazor.github.io/sitemap.xml
+Sitemap: https://shrts.ru/sitemap.xml
