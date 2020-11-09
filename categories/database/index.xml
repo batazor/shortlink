@@ -1,0 +1,6 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Database - Category - Architecture prototypes and experiments</title><link>https://shrts.ru/categories/database/</link><description>Database - Category - Architecture prototypes and experiments</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>batazor111@gmail.com (batazor)</managingEditor><webMaster>batazor111@gmail.com (batazor)</webMaster><lastBuildDate>Sun, 04 Oct 2020 13:48:42 +0300</lastBuildDate><atom:link href="https://shrts.ru/categories/database/" rel="self" type="application/rss+xml"/><item><title>Uuid as Kp</title><link>https://shrts.ru/posts/uuid-as-kp/</link><pubDate>Sun, 04 Oct 2020 13:48:42 +0300</pubDate><author>Author</author><guid>https://shrts.ru/posts/uuid-as-kp/</guid><description>UUID as KP #762 Docs UUID or GUID as Primary Keys? Be Careful!
+Primary Keys: IDs versus GUIDs
+UUID vs. Sequences
+MySQL
+MySQL 8.0.13: Default Value as uuid PostgreSQL
+Default value for UUID column in Postgres</description></item></channel></rss>
