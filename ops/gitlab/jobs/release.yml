@@ -35,6 +35,7 @@ goreleaser:
     # generate a changelog.
     GIT_DEPTH: 0
   before_script:
+    - docker login -u "$CI_DEPENDENCY_PROXY_USER" -p "$CI_DEPENDENCY_PROXY_PASSWORD" "$CI_DEPENDENCY_PROXY_SERVER"
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
   script: |
     docker pull $GORELEASER_IMAGE

@@ -7,6 +7,8 @@ code_intelligence_go:
   stage: .pre
   image: gitlab.com/shortlink-org/dependency_proxy/containers/sourcegraph/lsif-go:v1
   allow_failure: true # recommended
+  before_script:
+    - docker login -u "$CI_DEPENDENCY_PROXY_USER" -p "$CI_DEPENDENCY_PROXY_PASSWORD" "$CI_DEPENDENCY_PROXY_SERVER"
   script:
     - lsif-go
   artifacts:
@@ -49,6 +51,7 @@ golint:
       - gl-code-quality-report.json
     expire_in: 7 days
   before_script:
+    - docker login -u "$CI_DEPENDENCY_PROXY_USER" -p "$CI_DEPENDENCY_PROXY_PASSWORD" "$CI_DEPENDENCY_PROXY_SERVER"
     - apk add --no-cache jq
     - go mod vendor
   script:
