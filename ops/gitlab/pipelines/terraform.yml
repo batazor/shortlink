@@ -7,7 +7,7 @@ include:
 # Entrypoint is also needed as image by default set `terraform` binary as an
 # entrypoint.
 image:
-  name: hashicorp/terraform:light
+  name: https://gitlab.com/shortlink-org/dependency_proxy/containers/hashicorp/terraform:light
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
