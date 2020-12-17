@@ -1,7 +1,7 @@
 .job_template_deploy:
   stage: deploy
   image:
-    name: gitlab.com/shortlink-org/dependency_proxy/containers/alpine/helm:3.4.1
+    name: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/alpine/helm:3.4.1
     entrypoint: [""]
   before_script:
     - docker login -u "$CI_DEPENDENCY_PROXY_USER" -p "$CI_DEPENDENCY_PROXY_PASSWORD" "$CI_DEPENDENCY_PROXY_SERVER"

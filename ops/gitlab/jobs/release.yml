@@ -17,7 +17,7 @@ release:
 
 goreleaser:
   stage: release
-  image: gitlab.com/shortlink-org/dependency_proxy/containers/docker:stable
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/docker:stable
   services:
     - docker:dind
   variables:
