@@ -11,6 +11,6 @@
 .job_teplate_go: &job_go
 #  extends: .go-cache
   stage: test
-  image: https://gitlab.com/shortlink-org/dependency_proxy/containers/golang:1.15-buster
+  image: gitlab.com/shortlink-org/dependency_proxy/containers/golang:1.15-buster
   interruptible: true
   needs: []

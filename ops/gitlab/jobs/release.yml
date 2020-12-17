@@ -17,7 +17,7 @@ release:
 
 goreleaser:
   stage: release
-  image: https://gitlab.com/shortlink-org/dependency_proxy/containers/docker:stable
+  image: gitlab.com/shortlink-org/dependency_proxy/containers/docker:stable
   services:
     - docker:dind
   variables:

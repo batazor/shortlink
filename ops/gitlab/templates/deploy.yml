@@ -1,7 +1,7 @@
 .job_template_deploy:
   stage: deploy
   image:
-    name: https://gitlab.com/shortlink-org/dependency_proxy/containers/alpine/helm:3.4.1
+    name: gitlab.com/shortlink-org/dependency_proxy/containers/alpine/helm:3.4.1
     entrypoint: [""]
   script:
     - env

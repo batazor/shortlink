@@ -5,7 +5,7 @@ include:
 
 code_intelligence_go:
   stage: .pre
-  image: https://gitlab.com/shortlink-org/dependency_proxy/containers/sourcegraph/lsif-go:v1
+  image: gitlab.com/shortlink-org/dependency_proxy/containers/sourcegraph/lsif-go:v1
   allow_failure: true # recommended
   script:
     - lsif-go
@@ -40,7 +40,7 @@ golint:
   extends:
     - .job_teplate_go
   image:
-    name: https://gitlab.com/shortlink-org/dependency_proxy/containers/golangci/golangci-lint:v1.33-alpine
+    name: gitlab.com/shortlink-org/dependency_proxy/containers/golangci/golangci-lint:v1.33-alpine
     entrypoint: [""]
   artifacts:
     reports:
