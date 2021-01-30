@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/home/runner/work/shortlink/shortlink/pkg/ui/docs",
+	"sourceRoot": "/home/runner/work/shortlink/shortlink/ui/docs",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",
